@@ -1,0 +1,8 @@
+{% extends 'shop/base.html' %}
+<!-- {% load static %} -->
+{% block content %}
+    <h1>item {{ item.pk }}</h1>
+    {% for im in item.images.all %}
+    <h3>{{ im.image }}</h3>
+    {% endfor %}
+{% endblock content %}
